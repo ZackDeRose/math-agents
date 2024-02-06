@@ -14,4 +14,6 @@ app.use(cors({ origin: true }));
 socketServer.on('connection', (socket) => {
   console.log('a user connected');
 });
-socketServer.on('', () => {});
+socketServer.on('', () => {
+  console.log('a user disconnected');
+});
