@@ -15,13 +15,6 @@
         "generatePackageJson": true,
         "format": ["cjs"]
       }
-    },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
-      "options": {
-        "reportsDirectory": "../coverage/events"
-      }
     }
   },
   "tags": []
