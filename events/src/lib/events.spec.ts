@@ -1,7 +1,10 @@
-import { events } from './events';
+import { newUserConnectedEvent } from './events';
 
 describe('events', () => {
   it('should work', () => {
-    expect(events()).toEqual('events');
+    expect(newUserConnectedEvent('example userId')).toEqual({
+      type: '[User] new user connected',
+      userId: 'example userId',
+    });
   });
 });
