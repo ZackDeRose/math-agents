@@ -31,8 +31,9 @@ export const userRequestsNameChangeEvent = (
   userId,
   newName,
 });
-export type UserRequestsNameChangeEvent = ReturnType<typeof userRequestsNameChangeEvent>;
+export type UserRequestsNameChangeEvent = ReturnType<
+  typeof userRequestsNameChangeEvent
+>;
 export const isUserRequestsNameChangeEvent = (event: {
   type: string;
 }): event is UserDisconnectedEvent => event.type === userDisconnectedEventType;
-```
