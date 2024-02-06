@@ -7,6 +7,9 @@ const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 const app = express();
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello API' });
+});
 const httpServer = createServer(app);
 const socketServer = new Server(httpServer, { cors: { origin: true } });
 app.use(cors({ origin: true }));
@@ -17,3 +20,5 @@ socketServer.on('connection', (socket) => {
 socketServer.on('', () => {
   console.log('a user disconnected');
 });
+app.listen(port);
+console.log(`Server running at http://${host}:${port}/`);
