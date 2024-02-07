@@ -1,0 +1,12 @@
+{
+  "name": "frontend",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "frontend/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "command": "echo success!"
+    }
+  },
+  "tags": []
+}

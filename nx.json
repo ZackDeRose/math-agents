@@ -16,7 +16,7 @@
   },
   "nxCloudAccessToken": "NDhmOWIzMTMtZmFmYi00ZWQxLTgyNGMtMWIzMDdhNzNiOTM4fHJlYWQtd3JpdGU=",
   "targetDefaults": {
-    "@nx/esbuild:esbuild": {
+    "build": {
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
@@ -24,6 +24,12 @@
     "@nx/vite:test": {
       "cache": true,
       "inputs": ["default", "^production"]
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "e2e": {
+      "dependsOn": ["build"]
     }
   },
   "plugins": [

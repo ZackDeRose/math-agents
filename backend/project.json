@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "backend",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "server/src",
+  "sourceRoot": "backend/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -10,12 +10,12 @@
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
-        "outputPath": "dist/server",
+        "outputPath": "dist/backend",
         "format": ["cjs"],
         "bundle": false,
-        "main": "server/src/main.ts",
-        "tsConfig": "server/tsconfig.app.json",
-        "assets": ["server/src/assets"],
+        "main": "backend/src/main.ts",
+        "tsConfig": "backend/tsconfig.app.json",
+        "assets": ["backend/src/assets"],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
@@ -50,6 +50,9 @@
           "buildTarget": "server:build:production"
         }
       }
+    },
+    "e2e": {
+      "command": "echo success!"
     }
   },
   "tags": []

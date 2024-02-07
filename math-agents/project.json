@@ -1,8 +1,0 @@
-{
-  "name": "math-agents",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "math-agents/src",
-  "projectType": "application",
-  "targets": {},
-  "tags": []
-}

@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useState } from 'react';
+import * as events from 'utils';
 
 export function App() {
   const [status, setStatus] = useState<string>('connecting to server...');

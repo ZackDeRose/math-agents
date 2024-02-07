@@ -1,18 +1,17 @@
 {
-  "name": "events",
+  "name": "utils",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "events/src",
+  "sourceRoot": "utils/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/esbuild:esbuild",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/events",
-        "main": "events/src/index.ts",
-        "tsConfig": "events/tsconfig.lib.json",
-        "assets": ["events/*.md"],
-        "generatePackageJson": true,
+        "outputPath": "dist/utils",
+        "main": "utils/src/index.ts",
+        "tsConfig": "utils/tsconfig.lib.json",
+        "assets": ["utils/*.md"],
         "format": ["cjs"]
       }
     }

@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@math-agents/events": ["events/src/index.ts"]
+      "utils": ["utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
