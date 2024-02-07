@@ -29,7 +29,8 @@
       "dependsOn": ["build"]
     },
     "e2e": {
-      "dependsOn": ["build"]
+      "dependsOn": ["build"],
+      "cache": true
     }
   },
   "plugins": [
