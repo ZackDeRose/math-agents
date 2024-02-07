@@ -31,4 +31,4 @@ export function App() {
 
 export default App;
 
-console.log('foo');
+console.log('bar');
